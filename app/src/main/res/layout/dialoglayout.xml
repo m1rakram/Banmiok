@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/hintnewpas1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+    <EditText
+        android:id="@+id/etComments"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:hint="Keçmiş şifrəni daxil edin"
+        android:inputType="textMultiLine"
+        android:scrollbars="vertical" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/hintnewpas2"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+        <EditText
+            android:id="@+id/etComments2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:hint="Yeni şifrəni daxil edin"
+            android:inputType="textMultiLine"
+            android:scrollbars="vertical" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/hintnewpas3"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+        <EditText
+            android:id="@+id/etComments3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:hint="Yeni şifrəni təkrar daxil edin"
+            android:inputType="textMultiLine"
+            android:scrollbars="vertical" />
+    </android.support.design.widget.TextInputLayout>
+
+</LinearLayout>

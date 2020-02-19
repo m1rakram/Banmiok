@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_game"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.mirakram.banmiok.GameActivity"
+    android:background="@drawable/esasback">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/layout"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="36dp"
+            android:text="00:00"
+            android:textAlignment="center"
+            android:background="@color/common_google_signin_btn_text_dark_focused"
+            android:id="@+id/texttime"
+            android:textColor="@android:color/holo_green_dark" />
+    </LinearLayout>
+    <ScrollView
+        android:id="@+id/Scroll"
+        android:layout_width="match_parent"
+        android:layout_marginTop="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout"
+        android:layout_marginBottom="110dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3"
+                android:textAlignment="center"
+                android:textSize="24dp"
+             />
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-8584547019777134/9379883694">
+            </com.google.android.gms.ads.AdView>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/qverify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:text="Təsdiqlə"
+        android:background="@drawable/shapebutton"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/hintanswer"
+        android:layout_width="match_parent"
+        app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/qverify"
+        android:layout_alignParentStart="true">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/answer"
+        android:hint="Cavabınız"
+        android:layout_above="@id/qverify"/>
+    </android.support.design.widget.TextInputLayout>
+</RelativeLayout>

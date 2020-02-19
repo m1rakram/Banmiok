@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.mirakram.banmiok.LoginActivity"
+    android:background="@drawable/esasback">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Xoş gəlmisiniz"
+                android:textSize="30sp"
+                android:textColor="@android:attr/colorPrimaryDark"/>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/hintloguser"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/userName"
+                    android:textColor="@android:color/black"
+                    android:hint="İstifadəçi adınız"
+                    android:textSize="24sp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginBottom="10sp"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/hintlogpass"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                app:passwordToggleEnabled="true"
+                app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/passWord"
+                android:hint="Şifrəniz"
+                android:textSize="24sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="10sp"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <CheckBox
+                android:text="Məni xatırla"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20sp"
+                android:id="@+id/checkBox3"
+                app:buttonTint="?attr/colorPrimaryDark"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="18sp"
+                android:layout_alignStart="@+id/adView2" />
+
+            <TextView
+                android:text="Şifrəmi unutmuşam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/forgottenPass"
+                android:textSize="24sp"
+                android:textColor="?android:attr/textColorHint"
+                android:textColorHighlight="@color/colorPrimaryDark"
+                android:onClick="OnTextClickListener()"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="20sp"/>
+
+            <TextView
+                android:text="İlk istifadəmdir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/signupButton"
+                android:textSize="24sp"
+                android:textColor="?android:attr/textColorHint"
+                android:textColorHighlight="@color/colorPrimaryDark"
+                android:onClick="OnTextClickListener()"
+                android:layout_above="@+id/forgottenPass"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="24dp"
+                android:textAlignment="center" />
+
+            <Button
+                android:text="Daxil ol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:shadowRadius="5"
+                android:id="@+id/button"
+                android:background="@drawable/shapebutton"
+                android:layout_marginBottom="16dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:onClick="OnTextClickListener()"
+                style="@android:style/Widget.Material.Button" />
+
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-8584547019777134/9379883694">
+            </com.google.android.gms.ads.AdView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

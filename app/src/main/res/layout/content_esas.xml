@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_esas"
+    android:layout_width="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.mirakram.banmiok.EsasActivity"
+    tools:showIn="@layout/app_bar_esas"
+    android:background="@drawable/esasback">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:paddingBottom="0dp"
+        android:paddingEnd="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingStart="0dp"
+        android:paddingTop="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/textView4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:layout_height="50dp"
+            android:layout_centerHorizontal="true">
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                app:srcCompat="@drawable/banmioklogo"
+                android:id="@+id/imageView3"
+                android:layout_marginTop="0dp"
+                android:padding="0dp"
+                android:paddingBottom="0dp"
+                android:paddingEnd="0dp"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:paddingStart="0dp"
+                android:paddingTop="0dp"
+                android:layout_height="200dp" />
+
+            <Button
+                android:text="Yarış"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:drawableStart="@drawable/game"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/esas_yarish"
+                android:background="@drawable/shapebutton"
+                android:onClick="esasOnClickListener()"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textAlignment="center"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"/>
+
+            <Button
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="Statistika"
+                android:paddingLeft="10dp"
+                android:drawableStart="@drawable/statist"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/esas_stat"
+                android:paddingRight="10dp"
+                android:background="@drawable/shapebutton"
+                android:onClick="esasOnClickListener()"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"/>
+
+            <Button
+                android:text="Çıxış"
+                android:drawableStart="@drawable/exit"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_width="250dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:id="@+id/esas_exit"
+                android:background="@drawable/shapebutton"
+                android:onClick="esasOnClickListener()"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center_vertical|center_horizontal"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/forfacebook"
+                    android:layout_weight="0.25"
+                    android:src="@drawable/facebook"
+                    app:borderWidth="0dp"
+                    app:backgroundTint="@color/colorPrimary"
+                    app:fab_size="normal"
+                    android:adjustViewBounds="true"
+                    android:elevation="0dp" />
+
+                <com.google.android.gms.ads.AdView
+                    xmlns:ads="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/adView"
+                    android:layout_width="320dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    ads:adSize="BANNER"
+                    ads:adUnitId="ca-app-pub-8584547019777134/9379883694"
+                    android:layout_weight="99.5">
+                </com.google.android.gms.ads.AdView>
+
+                <android.support.design.widget.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/forinstagram"
+                    android:layout_weight="0.25"
+                    android:src="@drawable/instagram"
+                    app:backgroundTint="@color/colorPrimary"
+                    fab:fab_size="normal"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:text="Müəllif hüquqları qorunur         © 2017"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center"/>
+
+
+</RelativeLayout>

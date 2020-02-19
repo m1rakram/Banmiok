@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.mirakram.banmiok.ProfileActivity"
+    android:background="@drawable/esasback">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:src="@drawable/profile"
+                android:id="@+id/imageView4"
+                android:layout_height="136dp"
+                android:transitionName="Profilpicture"
+                android:layout_width="match_parent"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"/>
+
+
+            <TextView
+                android:text="Ad Soyad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="19dp"
+                android:gravity="center"
+                android:id="@+id/textView22"
+                android:textSize="24sp" />
+
+            <Button
+                android:text="Profil şəklini dəyiş"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/floating"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="0dp"
+                android:background="@drawable/shapebutton" />
+
+            <Button
+                android:text="Şifrəni dəyiş"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button8"
+                android:layout_marginBottom="0dp"
+                android:background="@drawable/shapebutton" />
+
+            <Button
+                android:text="Profildən çıxış"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button9"
+                android:onClick="logout"
+                android:background="@drawable/shapebutton" />
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-8584547019777134/3738967798">
+            </com.google.android.gms.ads.AdView>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/esas_profile"
+            android:icon="@drawable/profileicon"
+            android:title="Profil parametrləri" />
+        <item
+            android:id="@+id/esas_about"
+            android:icon="@drawable/info"
+            android:title="Haqqımızda" />
+        <item
+            android:id="@+id/Esas_button"
+            android:icon="@drawable/star"
+            android:title="Qiymətləndirin" />
+        <item
+            android:id="@+id/Esas_send"
+            android:icon="@drawable/message"
+            android:title="Şikayət və təkliflər" />
+
+    </group>
+
+</menu>

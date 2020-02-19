@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "293197450359",
+    "firebase_url": "https://banmiokapp-ab75d.firebaseio.com",
+    "project_id": "banmiokapp-ab75d",
+    "storage_bucket": "banmiokapp-ab75d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:293197450359:android:724f041a74e06986",
+        "android_client_info": {
+          "package_name": "com.banmiokapp.mirakram.banmiok"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "293197450359-o724gt0ef15ks8ltripsa1nc67ckrjjt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdFbrl0oACXJot9N_phnUs11w4A99Slw8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
